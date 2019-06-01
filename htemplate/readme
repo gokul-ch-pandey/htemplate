@@ -1,0 +1,2 @@
+1. go to https://start.spring.io/. This is spring boot starter web project with GUI to select dependencies.
+2. select web, mysql, dev-tools,jpa,security oauth2, security 

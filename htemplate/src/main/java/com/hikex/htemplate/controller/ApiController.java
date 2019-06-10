@@ -22,7 +22,6 @@ public class ApiController extends BaseController{
 	@ApiOperation(value="API for hello")
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "Success")})
 	@RequestMapping(value = "/hello")
-		@RequestMapping(value = "/hello", produces = "application/json")
 	public UserData helloWorld(Principal user) {
 	return dataMapper.map(user, UserData.class);
 	}

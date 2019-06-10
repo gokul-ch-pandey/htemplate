@@ -72,6 +72,14 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- Data Mapper -->
+		<dependency>
+    		<groupId>ma.glasnost.orika</groupId>
+    		<artifactId>orika-core</artifactId>
+    		<version>1.5.4</version>
+		</dependency>
+		
 	</dependencies>
 
 	<dependencyManagement>

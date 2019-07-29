@@ -2,11 +2,11 @@ package com.hikex.htemplate.controller;
 
 import javax.annotation.Resource;
 
-import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Component;
 
 import com.hikex.htemplate.pojo.mapper.DataMapper;
 
-@Controller
+@Component
 public class BaseController {
 
 	@Resource(name = "dataMapper")

@@ -1,45 +1,50 @@
 package com.hikex.htemplate.dto;
 
+import javax.validation.constraints.NotBlank;
+
 public class UserData {
+	@NotBlank(message = "First name cannot be blank.")
+	private String firstName;
 
-	private String name;
+	@NotBlank(message = "Last name cannot be blank.")
+	private String lastName;
 
-	private boolean authenticated;
+	@NotBlank(message = "Email cannot be blank.")
+	private String email;
 
-	private boolean clientOnly;
+	@NotBlank(message = "Password cannot be blank.")
+	private String password;
 
-	private String credentials;
-
-	public String getName() {
-		return name;
+	public String getFirstName() {
+		return firstName;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 
-	public boolean isAuthenticated() {
-		return authenticated;
+	public String getLastName() {
+		return lastName;
 	}
 
-	public void setAuthenticated(boolean authenticated) {
-		this.authenticated = authenticated;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
-	public boolean isClientOnly() {
-		return clientOnly;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setClientOnly(boolean clientOnly) {
-		this.clientOnly = clientOnly;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
-	public String getCredentials() {
-		return credentials;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setCredentials(String credentials) {
-		this.credentials = credentials;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 }

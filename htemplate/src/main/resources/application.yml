@@ -1,0 +1,38 @@
+
+
+#spring.devtools.add-properties=false
+#logging.level.web=DEBUG
+#spring.profiles.active=development
+
+#Datebase configuration
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/htemplatedb
+    username: root
+    password: root
+    
+check-user-scope: true
+
+logging:
+  level:
+    web: DEBUG
+
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: |
+          -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8yqUCxMqxuaZmMZsYUIN
+          WDg4jzJWDNugJy2f4CNtDqv2J7dE7ryHXtr5inR3JlVA4ldYsDmu+Xa53GrHPb+t
+          Y6eK50pVwDHAismDwiAjt9hNqmd+LKZWxC/vLM5cAAjh9BWlrSjx9sHzwEkAyMau
+          yNmpumTg1h5HDs1ZIEIvxj10evIlSBhCOWHjB5kyVxYMLBZGOKu8Cn8YeltP+2+9
+          sLut768559p5CR45YBLOvUNapPxO8TlbcFTO4eIu/FeH9e3cpul/GD78jOFHpf4S
+          ndAIMElCWnKyoczuXnhNWQ33IwQhNmdObrK29aEuaBVuAzUad1lA8s7wuN9XQIv5
+          uQIDAQAB
+          -----END PUBLIC KEY-----    
+

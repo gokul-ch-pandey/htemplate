@@ -1,14 +1,10 @@
 package com.hikex.htemplate.pojo.mapper.impl;
 
-import java.util.Set;
-
 import org.springframework.stereotype.Service;
 
 import com.hikex.htemplate.pojo.mapper.DataMapper;
 
 import ma.glasnost.orika.MapperFactory;
-import ma.glasnost.orika.MappingContext;
-import ma.glasnost.orika.MappingContextFactory;
 import ma.glasnost.orika.impl.ConfigurableMapper;
 import ma.glasnost.orika.impl.DefaultMapperFactory;
 
